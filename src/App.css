@@ -1,38 +1,784 @@
+body {
+    transform: scale(1.5);
+}
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* .spanBox {
+    font-size: 1em;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid rgb(157, 147, 147);
+    vertical-align: middle;
+    line-height: 13px;
+    width: 8px;
+    height: 8px;
+    margin-top: -19px;
+    margin-left: -1px;
+    margin-top: 0.2px;
+} */
+
+.spanLine {
+    font-size: 10.5px;
+    display: inline-block;
+    border-bottom: 1px solid #444;
+    vertical-align: middle;
+    line-height: 2px;
+    width: 10px;
+    height: 9px;
+    margin-top: 0px;
+    margin-left: -4.35px;
+    font-size: 1em;
+    padding: 0px !important;
+    margin-top: 1px;
+}
+
+span.cls_041 {
+    font-family: Arial, serif;
+    font-size: 11.4px;
+    color: rgb(43, 42, 41);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: underline
+}
+
+div.cls_041 {
+    font-family: Arial, serif;
+    font-size: 11.4px;
+    color: rgb(43, 42, 41);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_002 {
+    font-family: Arial, serif;
+    font-size: 9.2px;
+    color: rgb(43, 42, 41);
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none
+}
+
+div.cls_002 {
+    font-family: Arial, serif;
+    font-size: 9.2px;
+    color: rgb(43, 42, 41);
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none
+}
+
+span.cls_004 {
+    font-family: Arial, serif;
+    font-size: 8.1px;
+    color: rgb(43, 42, 41);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_004 {
+    font-family: Arial, serif;
+    font-size: 8.1px;
+    color: rgb(43, 42, 41);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_005 {
+    font-family: Arial, serif;
+    font-size: 12.1px;
+    color: rgb(254, 255, 255);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_005 {
+    font-family: Arial, serif;
+    font-size: 12.1px;
+    color: rgb(254, 255, 255);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_006 {
+    font-family: Arial, serif;
+    font-size: 7.9px;
+    color: rgb(43, 42, 41);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_006 {
+    font-family: Arial, serif;
+    font-size: 9.1px;
+    color: rgb(43, 42, 41);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_007 {
+    font-family: Arial, serif;
+    font-size: 7.7px;
+    color: rgb(43, 42, 41);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_007 {
+    font-family: Arial, serif;
+    font-size: 9.1px;
+    color: rgb(43, 42, 41);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_008 {
+    font-family: Arial, serif;
+    font-size: 7.0px;
+    color: rgb(199, 199, 198);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_008 {
+    font-family: Arial, serif;
+    font-size: 7.0px;
+    color: rgb(199, 199, 198);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_009 {
+    font-family: Arial, serif;
+    font-size: 8.1px;
+    color: rgb(43, 42, 41);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_009 {
+    font-family: Arial, serif;
+    font-size: 8.1px;
+    color: rgb(43, 42, 41);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_010 {
+    font-family: Arial, serif;
+    font-size: 8.1px;
+    color: rgb(43, 42, 41);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_010 {
+    font-family: Arial, serif;
+    font-size: 8.1px;
+    color: rgb(43, 42, 41);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_013 {
+    font-family: Arial, serif;
+    font-size: 7.3px;
+    color: rgb(254, 255, 255);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_013 {
+    font-family: Arial, serif;
+    font-size: 9.1px;
+    color: rgb(254, 255, 255);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_016 {
+    font-family: Arial, serif;
+    font-size: 6.9px;
+    color: rgb(43, 42, 41);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_016 {
+    font-family: Arial, serif;
+    font-size: 8.7px;
+    color: rgb(43, 42, 41);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_017 {
+    font-family: Arial, serif;
+    font-size: 10.5px;
+    color: rgb(254, 255, 255);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_017 {
+    font-family: Arial, serif;
+    font-size: 12.0px;
+    color: rgb(254, 255, 255);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_014 {
+    font-family: Arial, serif;
+    font-size: 8.8px;
+    color: rgb(254, 255, 255);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_014 {
+    font-family: Arial, serif;
+    font-size: 10.1px;
+    color: rgb(254, 255, 255);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_018 {
+    font-family: Arial, serif;
+    font-size: 8.1px;
+    color: rgb(43, 42, 41);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_018 {
+    font-family: Arial, serif;
+    font-size: 8.1px;
+    color: rgb(43, 42, 41);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_011 {
+    font-family: Arial, serif;
+    font-size: 8.6px;
+    color: rgb(43, 42, 41);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_011 {
+    font-family: Arial, serif;
+    font-size: 8.6px;
+    color: rgb(43, 42, 41);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_012 {
+    font-family: Arial, serif;
+    font-size: 8.6px;
+    color: rgb(43, 42, 41);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_012 {
+    font-family: Arial, serif;
+    font-size: 8.6px;
+    color: rgb(43, 42, 41);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_022 {
+    font-family: Arial, serif;
+    font-size: 7.0px;
+    color: rgb(218, 218, 218);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_022 {
+    font-family: Arial, serif;
+    font-size: 7.0px;
+    color: rgb(218, 218, 218);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_021 {
+    font-family: Arial, serif;
+    font-size: 8.1px;
+    color: rgb(199, 199, 198);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_021 {
+    font-family: Arial, serif;
+    font-size: 8.1px;
+    color: rgb(199, 199, 198);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_019 {
+    font-family: Arial, serif;
+    font-size: 10.1px;
+    color: rgb(43, 42, 41);
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none
+}
+
+div.cls_019 {
+    font-family: Arial, serif;
+    font-size: 10.1px;
+    color: rgb(43, 42, 41);
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none
+}
+
+span.cls_020 {
+    font-family: Arial, serif;
+    font-size: 8.6px;
+    color: rgb(43, 42, 41);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_020 {
+    font-family: Arial, serif;
+    font-size: 8.6px;
+    color: rgb(43, 42, 41);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_023 {
+    font-family: Arial, serif;
+    font-size: 8.6px;
+    color: rgb(43, 42, 41);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_023 {
+    font-family: Arial, serif;
+    font-size: 9.6px;
+    color: rgb(43, 42, 41);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_024 {
+    font-family: Arial, serif;
+    font-size: 8.7px;
+    color: rgb(43, 42, 41);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_024 {
+    font-family: Arial, serif;
+    font-size: 8.7px;
+    color: rgb(43, 42, 41);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_025 {
+    font-family: Arial, serif;
+    font-size: 9.6px;
+    color: rgb(43, 42, 41);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_025 {
+    font-family: Arial, serif;
+    font-size: 9.6px;
+    color: rgb(43, 42, 41);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_026 {
+    font-family: Arial, serif;
+    font-size: 6.7px;
+    color: rgb(254, 255, 255);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_026 {
+    font-family: Arial, serif;
+    font-size: 8.5px;
+    color: rgb(254, 255, 255);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_027 {
+    font-family: Arial, serif;
+    font-size: 9.1px;
+    color: rgb(254, 255, 255);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_027 {
+    font-family: Arial, serif;
+    font-size: 9.1px;
+    color: rgb(254, 255, 255);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_028 {
+    font-family: Arial, serif;
+    font-size: 7.6px;
+    color: rgb(254, 255, 255);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_028 {
+    font-family: Arial, serif;
+    font-size: 8.6px;
+    color: rgb(254, 255, 255);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_031 {
+    font-family: Arial, serif;
+    font-size: 10.1px;
+    color: rgb(218, 218, 218);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_031 {
+    font-family: Arial, serif;
+    font-size: 10.1px;
+    color: rgb(218, 218, 218);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_030 {
+    font-family: Arial, serif;
+    font-size: 7.5px;
+    color: rgb(254, 255, 255);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_030 {
+    font-family: Arial, serif;
+    font-size: 7.5px;
+    color: rgb(254, 255, 255);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_032 {
+    font-family: Arial, serif;
+    font-size: 8.6px;
+    color: rgb(254, 255, 255);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_032 {
+    font-family: Arial, serif;
+    font-size: 10.6px;
+    color: rgb(254, 255, 255);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_033 {
+    font-family: Arial, serif;
+    font-size: 10.1px;
+    color: rgb(43, 42, 41);
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none
+}
+
+div.cls_033 {
+    font-family: Arial, serif;
+    font-size: 10.1px;
+    color: rgb(43, 42, 41);
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none
+}
+
+span.cls_035 {
+    font-family: Arial, serif;
+    font-size: 8.1px;
+    color: rgb(254, 255, 255);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_035 {
+    font-family: Arial, serif;
+    font-size: 8.1px;
+    color: rgb(254, 255, 255);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_036 {
+    font-family: Arial, serif;
+    font-size: 5.8px;
+    color: rgb(43, 42, 41);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_036 {
+    font-family: Arial, serif;
+    font-size: 7.0px;
+    color: rgb(43, 42, 41);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_034 {
+    font-family: Arial, serif;
+    font-size: 8.6px;
+    color: rgb(174, 46, 45);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_034 {
+    font-family: Arial, serif;
+    font-size: 10.1px;
+    color: rgb(174, 46, 45);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_037 {
+    font-family: Arial, serif;
+    font-size: 11.1px;
+    color: rgb(43, 42, 41);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_037 {
+    font-family: Arial, serif;
+    font-size: 11.1px;
+    color: rgb(43, 42, 41);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_038 {
+    font-family: Arial, serif;
+    font-size: 8.6px;
+    color: rgb(174, 46, 45);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_038 {
+    font-family: Arial, serif;
+    font-size: 8.6px;
+    color: rgb(174, 46, 45);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_039 {
+    font-family: Arial, serif;
+    font-size: 7.0px;
+    color: rgb(43, 42, 41);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_039 {
+    font-family: Arial, serif;
+    /* font-size: 7.0px; */
+    font-size: 9.0px;
+    color: rgb(43, 42, 41);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none
+}
+
+span.cls_040 {
+    font-family: Arial, serif;
+    font-size: 10.1px;
+    color: rgb(254, 255, 255);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+div.cls_040 {
+    font-family: Arial, serif;
+    font-size: 10.1px;
+    color: rgb(254, 255, 255);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+.blockSpan {
+    display: inline-block;
+    width: 7.7px;
+    height: 9.5px;
+    border: 1px solid rgb(157, 147, 147);
+    position: relative;
+    white-space: pre;
+    padding-left: 2px;
+    text-transform: uppercase;
+    border-left: none;
+    border-top: none;
+    border-radius: 0px 0px 4px 0px;
+    margin: 1px;
+    font-size: 7px;
+}
+
+.spanBox {
+    font-size: 7px;
+    display: inline-block;
+    border: 1px solid rgb(157, 147, 147);
+    vertical-align: middle;
+    line-height: 13px;
+    width: 8px;
+    height: 8px;
+    border-left: none;
+    border-top: none;
+    border-radius: 0px 0px 4px 0px;
+    text-transform: uppercase;
+    margin: 1px;
+}
+
+.imagespan {
+    display: inline-block;
+    width: 272px;
+    height: 45px;
+    border: 1px solid rgb(157, 147, 147);
+    position: relative;
+    white-space: pre;
+    padding-left: 2px;
+    text-transform: uppercase;
+    border-radius: 0px 0px 4px 0px;
+    margin: 1px;
+    font-size: 7px;
 }
